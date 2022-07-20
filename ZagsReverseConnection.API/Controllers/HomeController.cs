@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ZagsReverseConnection.API.DbContexts;
 using ZagsReverseConnection.API.Interfaces;
+using ZagsReverseConnection.API.Models;
 
 namespace ZagsReverseConnection.API.Controllers
 {
@@ -29,6 +30,20 @@ namespace ZagsReverseConnection.API.Controllers
             return Ok(homeService.PostFamilyAsync(family));
         }
 
+        [HttpPost("Response")]
+        public IActionResult ResponseResult(ResponseModel model)
+        {
+            try
+            {
+                homeService.ResposeResult(model);
+                return Ok();
+            }
+            catch
+            {
+                return BadRequest();
+            }
+
+        }
 
     }
 }

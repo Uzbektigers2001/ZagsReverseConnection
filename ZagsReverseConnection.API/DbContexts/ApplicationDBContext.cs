@@ -10,5 +10,6 @@ namespace ZagsReverseConnection.API.DbContexts
         }
 
         public DbSet<GetFamilyModel> familyModels { get; set; }
+        public DbSet<VerificationReverseZags> VerificationReverseZags { get; set; }
     }
 }

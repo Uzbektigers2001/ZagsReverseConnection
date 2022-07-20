@@ -7,6 +7,8 @@ namespace ZagsReverseConnection.API.Interfaces
     {
         Task<string> PostFamilyAsync(object family);
         GetFamilyModel GetFamily(string PinFL);
+        void ResposeResult(ResponseModel model);
+
 
     }
 }

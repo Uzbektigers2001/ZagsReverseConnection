@@ -4,7 +4,7 @@ namespace ZagsReverseConnection.API.Models
 {
     public class GetFamilyModel
     {
-        public int id { get; set; }
+        public long id { get; set; }
         public string direction { get; set; }
         public List<Detail> details { get; set; }
         public List<List<string>> ref_regions { get; set; }

@@ -2,7 +2,7 @@
 {
     public class PostModel
     {
-        public int id { get; set; }
+        public long id { get; set; }
         public int result_code { get; set; }
         public object result_message { get; set; }
         public string direction { get; set; }
@@ -16,7 +16,7 @@
 
 public class Details
 {
-    public int? id { get; set; }
+    public long? id { get; set; }
     public string family_member { get; set; }
     public string pinfl { get; set; }
     public string surname { get; set; }
